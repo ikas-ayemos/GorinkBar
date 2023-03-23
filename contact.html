@@ -21,127 +21,130 @@
 </head>
 
 <body>
+    <header class="page-header wrapper">
+        <h1>
+            <a href="index.html"><img class="logo" src="image/logorila.png" alt="GorinkBerのロゴ画像"><br>
+                Gorink Bar
+            </a>
+        </h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ヘッダーここまで -->
+    <!-- メインここから -->
     <div class="yohaku">
-        <div class="big-bg">
-            <header class="page-header wrapper">
-                <h1>
-                    <a href="index.html"><img class="logo" src="image/logorila.png" alt="GorinkBerのロゴ画像"><br>
-                        Gorink Ber
-                    </a>
-                </h1>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- ヘッダーここまで -->
-            <!-- メインここから -->
-            <main>
-                <div class="contents-title">
-                    <img src="image/top_contact.png" alt="コンタクトページタイトルの画像">
-                    <p>10杯以上のご注文数が多いお客様には事前予約を承っております。<br>
-                        ご希望の日時・ご注文数など必要事項をご入力ください。<br>
-                        内容を確認後staffよりご連絡を差し上げます。<br>
-                    </p>
 
-                </div>
-                <!-- フォームここから -->
-                <div class="contact-form">
-                    <form action="#" method="post" name="contact-form">
+        <main>
+            <div class="contents-title">
+                <img src="image/top_contact.png" alt="コンタクトページタイトルの画像">
+                <p>10杯以上のご注文数が多いお客様には事前予約を承っております。<br>
+                    ご希望の日時・ご注文数など必要事項をご入力ください。<br>
+                    内容を確認後staffよりご連絡を差し上げます。<br>
+                </p>
+
+            </div>
+            <!-- フォームここから -->
+            <div class="contact-form">
+                <form action="#" method="post" name="contact-form">
+                    <table>
+                        <tr>
+                            <th>お問い合わせ内容：</th>
+                            <td><input type="radio" name="paperbag" value="ご注文" id="order"><label
+                                    for="order">ご注文</label>
+                                <input type="radio" name="paperbag" value="スタッフ募集" id="recruit"><label
+                                    for="recruit">スタッフ募集</label>
+                                <input type="radio" name="paperbag" value="その他" id="sonota"><label
+                                    for="sonota">その他</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>お名前：</th>
+                            <td><input type="text" placeholder="名字 名前"></td>
+                        </tr>
+                        <tr>
+                            <th>メールアドレス：</th>
+                            <td><input type="email" placeholder="メールアドレス"></td>
+                        </tr>
+                        <tr>
+                            <th>電話番号：</th>
+                            <td><input type="tel" placeholder="電話番号"></td>
+                        </tr>
+
+                        <tr>
+                            <th>使用用途：</th>
+                            <td><select name="use">
+                                    <option value="ホームパーティ">ホームパーティ</option>
+                                    <option value="打ち上げ">打ち上げ</option>
+                                    <option value="誕生日">誕生日</option>
+                                    <option value="二次会">二次会</option>
+                                    <option value="その他">その他</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th>その他希望欄：</th>
+                            <td><textarea name="message" placeholder="受け取り希望日時等はこちらにご記入ください。"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!-- 送信ボタン・リセットボタンの作成 -->
+                                <input type="submit" value="送信">
+                                <input type="reset" value="取消">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <!-- formここまで -->
+            </div>
+
+            <!-- accessここから -->
+            <div id="access">
+                <h3>access</h3>
+                <div class="wrapper">
+                    <div class="access-info">
+                        <img src="image/logorila_s.png">
                         <table>
                             <tr>
-                                <th>お問い合わせ内容：</th>
-                                <td><input type="radio" name="paperbag" value="ご注文" id="order"><label for="order">ご注文</label>
-                                    <input type="radio" name="paperbag" value="スタッフ募集" id="recruit"><label for="recruit">スタッフ募集</label>
-                                    <input type="radio" name="paperbag" value="その他" id="sonota"><label for="sonota">その他</label>
-                                </td>
+                                <th>住所</th>
+                                <td>大阪府大阪市北区<br>
+                                    梅田3丁目1-1</td>
                             </tr>
                             <tr>
-                                <th>お名前：</th>
-                                <td><input type="text" placeholder="名字 名前"></td>
+                                <th>電話番号</th>
+                                <td>03-1234-1234</td>
                             </tr>
                             <tr>
-                                <th>メールアドレス：</th>
-                                <td><input type="email" placeholder="メールアドレス"></td>
+                                <th>営業時間</th>
+                                <td>11:00~20:00</td>
                             </tr>
                             <tr>
-                                <th>電話番号：</th>
-                                <td><input type="tel" placeholder="電話番号"></td>
-                            </tr>
-
-                            <tr>
-                                <th>使用用途：</th>
-                                <td><select name="use">
-                                        <option value="ホームパーティ">ホームパーティ</option>
-                                        <option value="打ち上げ">打ち上げ</option>
-                                        <option value="誕生日">誕生日</option>
-                                        <option value="二次会">二次会</option>
-                                        <option value="その他">その他</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <th>その他希望欄：</th>
-                                <td><textarea name="message" placeholder="受け取り希望日時等はこちらにご記入ください。"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <!-- 送信ボタン・リセットボタンの作成 -->
-                                    <input type="submit" value="送信">
-                                    <input type="reset" value="取消">
-                                </td>
+                                <th>定休日</th>
+                                <td>不定休</td>
                             </tr>
                         </table>
-                    </form>
-                    <!-- formここまで -->
-                </div>
-
-                <!-- accessここから -->
-                <div id="access">
-                    <h3>access</h3>
-                    <div class="wrapper">
-                        <div class="access-info">
-                            <img src="image/logorila_s.png">
-                            <table>
-                                <tr>
-                                    <th>住所</th>
-                                    <td>大阪府大阪市北区<br>
-                                        梅田3丁目1-1</td>
-                                </tr>
-                                <tr>
-                                    <th>電話番号</th>
-                                    <td>03-1234-1234</td>
-                                </tr>
-                                <tr>
-                                    <th>営業時間</th>
-                                    <td>11:00~20:00</td>
-                                </tr>
-                                <tr>
-                                    <th>定休日</th>
-                                    <td>不定休</td>
-                                </tr>
-                            </table>
-                            <!-- <p>大阪府大阪市北区<br>
+                        <!-- <p>大阪府大阪市北区<br>
                                 梅田3丁目1-1<br>
                                 03-1234-1234<br>
                                 11:00~20:00<br>
                                 不定休<br>   </p>-->
 
-                        </div>
-                        <div class="access-map">
-                            <iframe
-                                src="https://www.google.com/maps/d/embed?mid=1Lf_HXvo4p4V1i9DULaWXTSnoaZA9-r4&ehbc=2E312F"
-                                width="800" height="400">
-                            </iframe>
-                        </div>
-                    </div><!-- wrapper -->
-                </div><!-- access -->
-            </main>
+                    </div>
+                    <div class="access-map">
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=1Lf_HXvo4p4V1i9DULaWXTSnoaZA9-r4&ehbc=2E312F"
+                            width="800" height="400">
+                        </iframe>
+                    </div>
+                </div><!-- wrapper -->
+            </div><!-- access -->
+        </main>
 
 
-        </div> <!-- メインここまで -->
+        <!-- メインここまで -->
 
     </div> <!-- yohakuここまで -->
 
@@ -169,13 +172,13 @@
                 </div>
             </div>
             <!-- コピーライトここから -->
-            <p><small>&copy;Gorink Ber</small></p>
+            <p><small>&copy;Gorink Bar</small></p>
         </section>
     </footer>
-    	<!-- ページトップへ飛ばすエリアここから -->
-	<div id="gotop">
-		<a href="#"><img src="image/upicon.png" alt="ページTOPへ戻るゴリラの画像"></a>
-	</div>
+    <!-- ページトップへ飛ばすエリアここから -->
+    <div id="gotop">
+        <a href="#"><img src="image/upicon.png" alt="ページTOPへ戻るゴリラの画像"></a>
+    </div>
 </body>
 
 </html>
